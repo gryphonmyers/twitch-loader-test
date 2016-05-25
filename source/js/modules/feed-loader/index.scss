@@ -1,0 +1,79 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//ENTRY
+.tf-feed-entry {
+    @include clearfix;
+}
+
+.tf-stream-thumb {
+    float: left;
+    margin-right: 20px;
+    max-width: 100%;
+}
+.tf-stream-viewers {
+    &::before {
+        content: "-";
+        margin: 0 7px;
+    }
+}
+
+.tf-stream-viewer-suffix {
+    &::before {
+        content: " ";
+    }
+}
+
+//CONTROLS
+.tf-controls {
+    @include clearfix;
+}
+
+//CONTROLS -- PAGER
+.tf-feed-pager {
+    float: right;
+}
+.tf-pager-count {
+    margin: 8px;
+}
+.tf-pager-count, .tf-pager {
+    vertical-align: middle;
+}
+.tf-pager {
+    display: inline-block;
+    border: 8px solid transparent;
+    cursor: pointer;
+    user-select: none;
+}
+.tf-pager-next {
+    border-left-color: gray;
+    border-left-width: 12px;
+    border-right-width: 0;
+}
+.tf-pager-prev {
+    border-right-color: gray;
+    border-right-width: 12px;
+    border-left-width: 0;
+}
+.tf-pager-total-pages {
+    &::before {
+        content: "/";
+        margin: 0 3px;
+    }
+}
+
+//CONTROLS -- RESULTS
+.tf-feed-results {
+    float: left;
+}
+.tf-results-label {
+    &::after {
+        content: ":";
+        margin-right: 5px;
+    }
+}

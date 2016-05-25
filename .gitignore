@@ -1,0 +1,4 @@
+bower_components
+node_modules
+public_html
+.DS_STORE

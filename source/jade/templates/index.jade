@@ -1,0 +1,18 @@
+<!doctype html>
+html
+    head
+        title Sony Challenge
+        link(href="assets/css/bundle.css" rel="stylesheet" type="text/css")
+    body
+        header.page-header
+            #feed-search
+        #page-content
+            .content-block#query-block
+                form#feed-query-form
+                    input#feed-query-input(type="text" data-context="siteContent" data-placeholder="this.searchQuery")
+                    button#feed-query-submit(data-context="siteContent" data-content="this.search")
+            .content-block#feed-block
+                #feed-wrapper
+        footer.page-footer
+        script(src="assets/js/bundle.js")
+            

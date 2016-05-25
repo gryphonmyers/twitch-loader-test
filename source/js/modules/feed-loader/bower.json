@@ -1,0 +1,24 @@
+{
+  "name": "feed-loader",
+  "description": "Simple twitch feed loader",
+  "main": "index.js",
+  "authors": [
+    "Gryphon Myers"
+  ],
+  "dependencies": {
+    "dom4": "https://github.com/WebReflection/dom4.git",
+    "lodash": "https://github.com/lodash/lodash.git#npm",
+    "es6-promise": "https://github.com/stefanpenner/es6-promise.git"
+  },
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
